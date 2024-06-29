@@ -7,7 +7,7 @@
             <ul class="list-group">
                 <Link href="/dashboard"><li class="list-group-item text-center">Home</li></Link>
                 <Link href="/create_product_view"><li class="list-group-item text-center">Create</li></Link>
-                <Link href="/video/video1.mp4"><li class="list-group-item text-center">Video</li></Link>
+                <Link href="/video/video1.mp4"><li class="list-group-item text-center">Videos Link</li></Link>
 
               </ul>
         </div>
