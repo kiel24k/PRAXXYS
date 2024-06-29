@@ -57,14 +57,12 @@ class ApiController extends Controller
             'date' => 'required',
             'time' => 'required'
         ]);
-
         $product = new Product();
         $product->name = $request->name;
         $product->description = $request->description;
         $product->category = $request->category;
         $product->date = $request->date;
         $product->time = $request->time;
-
         $image = $request->file('image');
         $fileName = $image->hashName();
         $request->image->move(public_path('uploads'), $fileName);

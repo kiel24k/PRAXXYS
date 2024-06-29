@@ -16,10 +16,6 @@ Route::get('/', function () {
 
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',])
     ->group(function () {
-        //Vue Inertia Rendering
-        // Route::get('/dashboard', function () {
-        //     return Inertia::render('Dashboard', []);
-        // })->name('dashboard');
         Route::get('/dashboard', function () {
             return Inertia::render('List');
         });
@@ -41,15 +37,16 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
         Route::get('/remove_product/{id}', [ApiController::class, 'removeProduct'])
             ->middleware('auth:sanctum');
 
-
         Route::post('/create_product', [ApiController::class, 'createProduct'])
             ->middleware('auth:sanctum');
 
         Route::get('/update_product_view/{id}', [ApiController::class, 'updateProductView'])
             ->middleware('auth:sanctum');
 
-        Route::post('/update_product/{id}', [ApiController::class, 'updateProduct']);
+        Route::post('/update_product/{id}', [ApiController::class, 'updateProduct'])
+        ->middleware('auth:sanctum');;
 
         //Bonus objective: Create a Video Player Vue component
-        Route::get('/video/{video}', [ApiController::class, 'test']);
+        Route::get('/video/{video}', [ApiController::class, 'test'])
+        ->middleware('auth:sanctum');;
     });
