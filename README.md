@@ -13,15 +13,6 @@
 <br>
 <p>Open the folder where you installed the repository( PRAXXYS ) in your cmd path earlier and open it to code editor( VS code,Sublime,Atom etc )</p>
 <br>
-<p>inside the Folder open the terminal and paste this command:</p>
-    <p>=> composer install</p>
-    <p>=> php artisan storage:link</p>
-    <p>=> php artisan key:generate</p>
-    <p>=> php artisan db:seed</p>
-    <p>=> php artisan optimize</p>
-    <p>=> php artisan db:seed --class=ProductSeeder</p>
-    <p>=> npm install</p>
-    <br>
 <p>at your folder(PRAXXYS) find ( .env.example ) file and change the name to .env</p>
 <br>
 <p>inside the .env remove the ( DB_CONNECTION=sqlite ) then paste this code:</p>
@@ -31,6 +22,18 @@
       <p>DB_DATABASE=praxxysdb</p>
       <p>DB_USERNAME=root</p>
       <p>DB_PASSWORD=</p>
+<br>     
+<p>inside the Folder open the terminal and paste this command:</p>
+    <p>=> composer install</p>
+    <p>=> php artisan storage:link</p>
+    <p>=> php artisan key:generate</p>
+    <p>=> php artisan migrate</p>
+    <p>=> php artisan db:seed</p>
+    <p>=> php artisan optimize</p>
+    <p>=> php artisan db:seed --class=ProductSeeder</p>
+    <p>=> npm install</p>
+    <br>
+
 <p>at your current code editor create 2 command prompt and paste this per command prompt</p>
     <p>=> php artisan serve</p>
     <p>=> npm run dev</p>
