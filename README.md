@@ -7,13 +7,13 @@
 <br>
 <p>-download and install xampp( php 8.2.12 ) ( https://www.apachefriends.org/ )</p>
 <br>
-<p>-Open command prompt</p>
+<p>-open command prompt</p>
 <br>
-<p>-dd this command to your current path of your terminal => git clone https://github.com/kiel24k/PRAXXYS.git</p>
+<p>-add this command to your current path of your terminal => git clone https://github.com/kiel24k/PRAXXYS.git</p>
 <br>
-<p>-Open the folder where you installed the repository( PRAXXYS ) in your cmd path earlier and open it to code editor( VS code,Sublime,Atom etc )</p>
+<p>-open the folder where you installed the repository( PRAXXYS ) in your cmd path earlier and open it to code editor( VS code,Sublime,Atom etc )</p>
 <br>
-<p>-at your folder(PRAXXYS) find ( .env.example ) file and change the name to .env</p>
+<p>-tt your folder(PRAXXYS) find ( .env.example ) file and change the name to .env</p>
 <br>
 <p>-inside the .env remove the ( DB_CONNECTION=sqlite ) then paste this code:</p>
       <p>DB_CONNECTION=mysql</p>
