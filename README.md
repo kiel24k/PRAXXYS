@@ -18,6 +18,7 @@
     <p>=> php artisan storage:link</p>
     <p>=> php artisan key:generate</p>
     <p>=> php artisan db:seed</p>
+    <p>=> php artisan optimize</p>
     <p>=> php artisan db:seed --class=ProductSeeder</p>
     <p>=> npm install</p>
     <br>
