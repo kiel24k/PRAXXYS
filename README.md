@@ -13,7 +13,7 @@
 <br>
 <p>-open the folder where you installed the repository( PRAXXYS ) in your cmd path earlier and open it to code editor( VS code,Sublime,Atom etc )</p>
 <br>
-<p>-att your folder(PRAXXYS) find ( .env.example ) file and change the name to .env</p>
+<p>-at your folder(PRAXXYS) find ( .env.example ) file and change the name to .env</p>
 <br>
 <p>-inside the .env remove the ( DB_CONNECTION=sqlite ) then paste this code:</p>
       <p>DB_CONNECTION=mysql</p>
