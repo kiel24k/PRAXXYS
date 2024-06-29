@@ -27,12 +27,8 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
         Route::get('/create_product_view', function () {
             return Inertia::render('CreateProduct');
         });
-        Route::get('/update_product_view/{id}', [ApiController::class, 'updateProductView'])
-            ->middleware('auth:sanctum');
-
 
         //Laravel HTTP Routing API
-
         Route::get('/all_product_list', [ApiController::class, 'allProductList'])
             ->middleware('auth:sanctum');
 
@@ -49,5 +45,11 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
         Route::post('/create_product', [ApiController::class, 'createProduct'])
             ->middleware('auth:sanctum');
 
+        Route::get('/update_product_view/{id}', [ApiController::class, 'updateProductView'])
+            ->middleware('auth:sanctum');
+
         Route::post('/update_product/{id}', [ApiController::class, 'updateProduct']);
+
+        //Bonus objective: Create a Video Player Vue component
+        Route::get('/video/{video}', [ApiController::class, 'test']);
     });

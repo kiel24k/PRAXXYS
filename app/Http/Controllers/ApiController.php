@@ -111,4 +111,10 @@ class ApiController extends Controller
         $product->update();
         return response()->json($product);
     }
+
+    public function test($video)
+    {
+        $res = response()->json($video);
+        return Inertia::render('Video', ['res' => $res]);
+    }
 }

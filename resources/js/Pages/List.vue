@@ -25,18 +25,18 @@
                                         <option value="prod1">Prod1</option>
                                         <option value="prod2">Prod2</option>
                                     </select>
-                                    <input
-                                        type="text"
-                                        id="search"
-                                        placeholder="Search"
-                                        v-model="search"
-                                    />
                                     <Link
                                         href="/create_product_view"
                                         class="btn btn-success"
                                         method="get"
                                         >Create</Link
                                     >
+                                    <input
+                                        type="text"
+                                        id="search"
+                                        placeholder="Search"
+                                        v-model="search"
+                                    />
                                 </div>
                             </div>
                         </div>

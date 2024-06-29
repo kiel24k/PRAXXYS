@@ -120,7 +120,7 @@ const image = (event) => {
     }
 };
 
-//submit form method
+//submit form 
 const submit = async () => {
     await axios.get("/sanctum/csrf-cookie");
     await axios({

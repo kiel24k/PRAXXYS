@@ -101,13 +101,7 @@ import axios from "axios";
 import { onMounted, ref, watch } from "vue";
 import Sidebar from "./Sidebar.vue";
 
-
-const props = defineProps({
-    haha: {
-        type: Array
-    },
-});
-
+//current data field
 const currentData = ref({
     id: '',
     name: '',
@@ -117,6 +111,10 @@ const currentData = ref({
     date: '',
     time: '',
 })
+//validation and input fields
+const validation = ref({});
+
+//get the image file
 const updateImage  = (event) => {
     const updatedFile = event.target.files[0];
     if(updatedFile){
@@ -124,18 +122,17 @@ const updateImage  = (event) => {
     }
 }
 
+//data from rendered inertia
+const props = defineProps({
+    haha: {
+        type: Array
+    },
+});
+
+//insert inertia value to ref
 onMounted(() => {
      currentData.value = props.haha.original
 })
-
-//validation and input fields
-const validation = ref({});
-
-//get the image file
-const file = ref(null);
-
-//get the current value
-
 
 //submit form method
 const submit = async () => {
