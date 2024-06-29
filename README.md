@@ -3,7 +3,6 @@
 
 <p>download and install composer ( https://getcomposer.org/download/ )</p>
 <br>
-<br>
 <p>download and install node ( https://nodejs.org/en )</p>
 - 
 - download and install xampp( php 8.2.12 ) ( https://www.apachefriends.org/ )
