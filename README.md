@@ -31,7 +31,7 @@
       <p>DB_USERNAME=root</p>
       <p>DB_PASSWORD=</p>
 <br>
-<p>at your terminal paste this:</p>
+<p>at your current code editor create 2 command prompt and paste this per command prompt</p>
     <p>=> php artisan serve</p>
     <p>=> npm run dev</p>
 <br>
