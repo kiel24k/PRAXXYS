@@ -4,22 +4,22 @@
 <p>download and install composer ( https://getcomposer.org/download/ )</p>
 <br>
 <p>download and install node ( https://nodejs.org/en )</p>
-- 
-- download and install xampp( php 8.2.12 ) ( https://www.apachefriends.org/ )
-- 
-- Open command prompt
-- 
-- Add this command to your current path of your terminal => git clone https://github.com/kiel24k/PRAXXYS.git
-- 
-- Open the folder where you installed the clone(PRAXXYS) in your cmd path earlier and open it to code editor(VS code,Sublime,Atom etc)
-- 
-- inside the Folder open the terminal and paste this command:
-    => composer install
-    => php artisan storage:link
-    => php artisan key:generate
-    => php artisan db:seed
-    => php artisan db:seed --class=ProductSeeder
-    => npm install
+<br>
+<p>download and install xampp( php 8.2.12 ) ( https://www.apachefriends.org/ )</p>
+<br>
+<p>Open command prompt</p>
+<br>
+<p>Add this command to your current path of your terminal => git clone https://github.com/kiel24k/PRAXXYS.git</p>
+<br>
+<p>Open the folder where you installed the clone(PRAXXYS) in your cmd path earlier and open it to code editor(VS code,Sublime,Atom etc)</p>
+<br>
+<p>inside the Folder open the terminal and paste this command:</p>
+    <p>=> composer install</p>
+    <p>=> php artisan storage:link</p>
+    <p>=> php artisan key:generate</p>
+    <p>=> php artisan db:seed</p>
+    <p>=> php artisan db:seed --class=ProductSeeder</p>
+    <p>=> npm install</p>
   
 - at your folder(PRAXXYS) find ( .env.example ) file and change the name to .env
 - 
